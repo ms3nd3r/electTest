@@ -1,7 +1,8 @@
-/*
+/* /*
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
+ /*
 body {
   position: relative;
   color: white;
@@ -59,4 +60,63 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: 20px 0;
+} */ 
+
+
+
+body {
+  background-color: #1e222a;
 }
+
+.App {
+  text-align: center;
+  &-header {
+    background-color: #282c34;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: DSEG14-Modern;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    padding-bottom: 8px;
+  }
+}
+
+.main {
+  background-color: #32363e;
+}
+
+.timer {
+  display: inline-block;
+  font-family: DSEG7-Classic;
+  font-weight: bold;
+  font-size: calc(32px + 10vmin);
+  line-height: 1.5;
+  background-color: #1e222a;
+  color: #40a040;
+  padding: 8px;
+  margin: 8px auto;
+}
+
+.buttons {
+  padding: 4px 0 8px;
+}
+
+button {
+  font-family: DSEG14-Modern;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ccc;
+  background-color: #5a5e66;
+  border: #464a52;
+  border-radius: 5px;
+  padding: 4px 6px;
+  margin: 2px 4px;
+  cursor: pointer;
+
+}
+
+@import "dseg/css/dseg.css";
